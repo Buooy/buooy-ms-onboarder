@@ -1,0 +1,115 @@
+.text-center{	text-align:center;	}
+.hidden{	display: none;	}
+.col-left, .col-right{
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
+.img-lg-centered, .img-xlg-centered{
+	padding-top: 35px;
+	width: 100%;
+	img{
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
+.img-xlg-centered{
+	padding-top: 20px;
+	img{
+		max-width: 400px;
+	}
+}
+.error{
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	line-height: 30px;
+	border-radius: 5px;
+}
+
+// Remodal
+.remodal{
+	border-radius: 10px;
+	background: url('../img/bg.png');
+	
+	// Messages
+	#remodal-msg{
+		width: 100%;
+		height: 30px;
+		margin-bottom: 10px;
+	}
+	
+	//	Actions
+	.remodal-adduser, .remodal-cancel, .remodal-confirm, .remodal-back{
+		min-width: 80px;
+	}
+	.remodal-adduser{
+		margin: 0 auto;
+		background-color: rgba(211,84,0, 0.8);
+		&:hover{
+			background-color: rgba(211,84,0, 1.0);
+		}
+	}
+	.remodal-back{
+		background-color: #3a9bdc;
+	}
+	
+	// Fix checkboxes
+	input[type=checkbox], input[type=radio] {
+		margin: 0;
+		height: 15px;
+		width: 15px;
+	}
+	
+	// Loading image
+	.loading-img{
+		height: 8px;
+	}
+	
+	// Fix table
+	.form-table th, .form-table td{
+		padding: 5px 10px;
+	}
+	.form-table th{
+		padding-left: 0px;
+	}
+}
+#remodal-actions{
+	&{
+		text-align:left;
+		position:relative;
+	}
+	#remodal-actions-left, #remodal-actions-right{
+		display: inline-block;
+		
+	}
+	#remodal-actions-right{
+		position:absolute;
+		right:0;
+	}
+}
+
+// Slick
+.slick{
+	text-align:left;
+}
+.slick-slider{
+	margin-bottom: 0px;
+}
+.slick-slide h2{
+	text-align:center !important;
+}
+
+#modalTitle{
+	&{
+		line-height: 25px;
+		vertical-align: text-bottom;
+	}
+	img{
+		height: 25px;
+		display: inline-block;
+		vertical-align: text-bottom;
+		padding-right: 10px;
+	}
+	
+}
